@@ -33,7 +33,7 @@ const FeedPost = (props: IFeedPost) => {
           style={styles.threeDots}
         />
       </View>
-      <Image source={post.image} style={styles.image} />
+      <Image source={{uri: post.image}} style={styles.image} />
       <View style={styles.footer}>
         <View style={styles.iconContainer}>
           <AntDesign

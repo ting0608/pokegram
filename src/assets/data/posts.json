@@ -1,0 +1,150 @@
+[
+  {
+    "id": "1",
+    "createdAt": "19 December 2023",
+    "image": "/Users/tingcccc/Desktop/TestProj/pokegram/src/assets/images/psyPlay.png",
+    "description": "Family gathering to engage in our favorite pastime—playing in the water on a warm and sunny day at the edge of Lake Psyduck.",
+    "user": {
+      "id": "u1",
+      "image": "https://img.pokemondb.net/artwork/large/psyduck.jpg",
+      "username": "Psyduck"
+    },
+    "nofComments": 12,
+    "nofLikes": 703,
+    "comments": [
+      {
+        "id": "1",
+        "comment": "Wish i could join😭😭 But Ash-san never treats me day off 😭",
+        "user": {
+          "id": "u1",
+          "username": "Pikachu"
+        }
+      },
+      {
+        "id": "2",
+        "comment": "Where is this buffet located?",
+        "user": {
+          "id": "u1",
+          "username": "Cramorant"
+        }
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "createdAt": "19 December 2023",
+    "image": "/Users/tingcccc/Desktop/TestProj/pokegram/src/assets/images/pika1.jpg",
+    "description": "One of the best selfie ever taken by me.",
+    "user": {
+      "id": "u1",
+      "image": "https://img.pokemondb.net/artwork/avif/pikachu.avif",
+      "username": "Pikachu"
+    },
+    "nofComments": 1,
+    "nofLikes": 1,
+    "comments": [
+      {
+        "id": "1",
+        "comment": "Someone like my post please.",
+        "user": {
+          "id": "u1",
+          "username": "Pikachu"
+        }
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "createdAt": "21 November 2002",
+    "image": "/Users/tingcccc/Desktop/TestProj/pokegram/src/assets/images/GK_fight.png",
+    "description": "Definitely winnable. Whats under the ocean? MORE EARTH! ",
+    "user": {
+      "id": "u1",
+      "image": "https://img.pokemondb.net/artwork/large/groudon.jpg",
+      "username": "Groudon"
+    },
+    "nofComments": 3,
+    "nofLikes": "21k",
+    "comments": [
+      {
+        "id": "1",
+        "comment": "Stop sticking on your phone loser.",
+        "user": {
+          "id": "u1",
+          "username": "Kyogre"
+        }
+      },
+      {
+        "id": "2",
+        "comment": "Fight when?",
+        "user": {
+          "id": "u1",
+          "username": "Rayquaza"
+        }
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "createdAt": "18 June 2023",
+    "image": "/Users/tingcccc/Desktop/TestProj/pokegram/src/assets/images/suicune.png",
+    "description": "神兽之耻",
+    "user": {
+      "id": "u1",
+      "image": "https://img.pokemondb.net/artwork/large/ho-oh.jpg",
+      "username": "Ho-Oh"
+    },
+    "nofComments": 300,
+    "nofLikes": "78k",
+    "comments": [
+      {
+        "id": "1",
+        "comment": "I can explain.",
+        "user": {
+          "id": "u1",
+          "username": "Suicune"
+        }
+      },
+      {
+        "id": "2",
+        "comment": "Disgrace",
+        "user": {
+          "id": "u1",
+          "username": "Entei"
+        }
+      }
+    ]
+  },
+
+  {
+    "id": "5",
+    "createdAt": "20 June 2023",
+    "image": "/Users/tingcccc/Desktop/TestProj/pokegram/src/assets/images/arceus.png",
+    "description": "Same",
+    "user": {
+      "id": "u1",
+      "image": "https://img.pokemondb.net/artwork/large/arceus.jpg",
+      "username": "Arceus"
+    },
+    "nofComments": 720,
+    "nofLikes": "178k",
+    "comments": [
+      {
+        "id": "1",
+        "comment": "SHUT UP.",
+        "user": {
+          "id": "u1",
+          "username": "Suicune"
+        }
+      },
+      {
+        "id": "2",
+        "comment": "Disgrace",
+        "user": {
+          "id": "u1",
+          "username": "Giratina"
+        }
+      }
+    ]
+  }
+]

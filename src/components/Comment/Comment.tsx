@@ -5,7 +5,7 @@ import fonts from '../../theme/font';
 import {IComment} from '../../types/models';
 
 interface ICommentProps {
-  post: IComment;
+  comment: IComment;
 }
 
 const Comment = ({comment}: ICommentProps) => {
