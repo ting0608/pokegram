@@ -6,27 +6,34 @@ import Entypo from 'react-native-vector-icons/Entypo';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Feather from 'react-native-vector-icons/Feather';
-import PsyPlay from '../../assets/images/psyPlay.png';
+//import PsyPlay from '../../assets/images/psyPlay.png';
 import styles from './styles';
+import Comment from '../Comment/Comment';
+import {IPost} from '../../types/models';
 
-const FeedPost = () => {
+interface IFeedPost {
+  post: IPost;
+}
+
+const FeedPost = (props: IFeedPost) => {
+  const {post} = props;
   return (
     <View style={styles.post}>
       <View style={styles.header}>
         <Image
           source={{
-            uri: 'https://img.pokemondb.net/artwork/large/psyduck.jpg',
+            uri: post.user.image,
           }}
           style={styles.userAvatar}
         />
-        <Text style={styles.userName}>Psyduck</Text>
+        <Text style={styles.userName}>{post.user.username}</Text>
         <Entypo
           name="dots-three-horizontal"
           size={16}
           style={styles.threeDots}
         />
       </View>
-      <Image source={PsyPlay} style={styles.image} />
+      <Image source={post.image} style={styles.image} />
       <View style={styles.footer}>
         <View style={styles.iconContainer}>
           <AntDesign
@@ -56,31 +63,27 @@ const FeedPost = () => {
         </View>
         <Text>
           Liked by <Text style={{fontWeight: fonts.weight.bold}}>Pikachu</Text>{' '}
-          and <Text style={{fontWeight: fonts.weight.bold}}>702 others</Text>
+          and{' '}
+          <Text style={{fontWeight: fonts.weight.bold}}>
+            {post.nofLikes} others
+          </Text>
         </Text>
 
         {/* Post desc */}
         <Text style={styles.text}>
-          <Text style={{fontWeight: fonts.weight.bold}}>Psyduck</Text> Family
-          gathering to engage in our favorite pastime—playing in the water on a
-          warm and sunny day at the edge of Lake Psyduck.
+          <Text style={{fontWeight: fonts.weight.bold}}>
+            {post.user.username}
+          </Text>{' '}
+          {post.description}
         </Text>
 
         {/* comments */}
-        <Text style={styles.text2}>View all 12 comments</Text>
-        <View style={styles.comment}>
-          <Text style={styles.commentText}>
-            <Text style={{fontWeight: fonts.weight.bold}}>Pikachu</Text> Wish i
-            could join😭😭 But Ash-san never treats me day off 😭
-          </Text>
-          <AntDesign
-            name={'hearto'}
-            size={14}
-            style={styles.icon}
-            color={colors.black}
-          />
-        </View>
-        <Text style={styles.text2}>18 December 2023</Text>
+        <Text style={styles.text2}>View all {post.nofComments} comments</Text>
+        {post.comments.map((comment: any) => (
+          <Comment key={comment.id} post={post} comment={comment} />
+        ))}
+
+        <Text style={styles.text2}>{post.createdAt}</Text>
       </View>
     </View>
   );

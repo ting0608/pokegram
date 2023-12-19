@@ -12,7 +12,7 @@ export default StyleSheet.create({
     width: '100%',
     aspectRatio: 16 / 9,
     height: '50%',
-    overflow: 'hidden',
+    //overflow: 'hidden',
   },
   header: {
     flexDirection: 'row',
@@ -54,12 +54,6 @@ export default StyleSheet.create({
   bold: {fontWeight: fonts.weight.bold},
   comment: {flexDirection: 'row', alignItems: 'center'},
 
-  commentText: {
-    // color: colors.black,
-    // backgroundColor: colors.lightGray,
-    flex: 1,
-    lineHeight: 18,
-  },
   text2: {
     // color: colors.black,
     // backgroundColor: colors.lightGray,
