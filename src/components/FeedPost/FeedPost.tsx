@@ -10,13 +10,23 @@ import Feather from 'react-native-vector-icons/Feather';
 import styles from './styles';
 import Comment from '../Comment/Comment';
 import {IPost} from '../../types/models';
+import {useState} from 'react';
 
 interface IFeedPost {
   post: IPost;
 }
 
-const FeedPost = (props: IFeedPost) => {
-  const {post} = props;
+const FeedPost = ({post}: IFeedPost) => {
+  //const {post} = props;
+  const state = useState(false);
+  // const isDescriptionExplained = state[0];
+  // // isDescriptionExplained = false;
+  // const setIsDescriptionExplained = state[1];
+  const [isDescriptionExpanded, setIsDescriptionExpanded] = useState(false);
+  const toggleDescriptionExpanded = () => {
+    setIsDescriptionExpanded(v => !v);
+  };
+
   return (
     <View style={styles.post}>
       <View style={styles.header}>
@@ -70,11 +80,14 @@ const FeedPost = (props: IFeedPost) => {
         </Text>
 
         {/* Post desc */}
-        <Text style={styles.text}>
+        <Text style={styles.text} numberOfLines={isDescriptionExpanded ? 0 : 3}>
           <Text style={{fontWeight: fonts.weight.bold}}>
             {post.user.username}
           </Text>{' '}
           {post.description}
+        </Text>
+        <Text style={styles.text2} onPress={toggleDescriptionExpanded}>
+          {isDescriptionExpanded ? 'less' : 'more'}
         </Text>
 
         {/* comments */}
