@@ -11,14 +11,14 @@ export default StyleSheet.create({
   image: {
     width: '100%',
     aspectRatio: 16 / 9,
-    height: '50%',
+    //height: '60%',
     //overflow: 'hidden',
   },
   header: {
     flexDirection: 'row',
     alignItems: 'center',
     padding: 10,
-    paddingTop: 20,
+    //paddingTop: 20,
     //backgroundColor: colors.black,
   },
   userAvatar: {

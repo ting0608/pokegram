@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image} from 'react-native';
+import {View, Text, StyleSheet, Image, Pressable} from 'react-native';
 import colors from '../../theme/colors';
 import fonts from '../../theme/font';
 import Entypo from 'react-native-vector-icons/Entypo';
@@ -11,6 +11,7 @@ import styles from './styles';
 import Comment from '../Comment/Comment';
 import {IPost} from '../../types/models';
 import {useState} from 'react';
+import DoublePressable from '../DoublePressable';
 
 interface IFeedPost {
   post: IPost;
@@ -23,9 +24,24 @@ const FeedPost = ({post}: IFeedPost) => {
   // // isDescriptionExplained = false;
   // const setIsDescriptionExplained = state[1];
   const [isDescriptionExpanded, setIsDescriptionExpanded] = useState(false);
+  const [isLiked, setIsLiked] = useState(false);
+
   const toggleDescriptionExpanded = () => {
     setIsDescriptionExpanded(v => !v);
   };
+
+  const toggleLike = () => {
+    setIsLiked(v => !v);
+  };
+
+  // let lastTap = 0;
+  // const handleDoublePress = () => {
+  //   const now = Date.now();
+  //   if (now - lastTap < 300) {
+  //     toggleLike();
+  //   }
+  //   lastTap = now;
+  // };
 
   return (
     <View style={styles.post}>
@@ -43,15 +59,19 @@ const FeedPost = ({post}: IFeedPost) => {
           style={styles.threeDots}
         />
       </View>
-      <Image source={{uri: post.image}} style={styles.image} />
+      <DoublePressable onDoublePress={toggleLike}>
+        <Image source={{uri: post.image}} style={styles.image} />
+      </DoublePressable>
       <View style={styles.footer}>
         <View style={styles.iconContainer}>
-          <AntDesign
-            name={'hearto'}
-            size={24}
-            style={styles.icon}
-            color={colors.black}
-          />
+          <Pressable onPress={toggleLike}>
+            <AntDesign
+              name={isLiked ? 'heart' : 'hearto'}
+              size={24}
+              style={styles.icon}
+              color={isLiked ? colors.accent : colors.black}
+            />
+          </Pressable>
           <Ionicons
             name="chatbubble-outline"
             size={24}
