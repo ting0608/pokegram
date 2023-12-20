@@ -52,6 +52,7 @@ const Carousel = ({images, onDoublePress}: ICarousel) => {
         onViewableItemsChanged={onViewableItemsChanged.current}
       />
       <View style={styles.dots}>
+        {/* this index is use to highlight the dot */}
         {images.map((_, index) => (
           <View
             key={index}
@@ -59,6 +60,7 @@ const Carousel = ({images, onDoublePress}: ICarousel) => {
               styles.dot,
               {
                 backgroundColor:
+                  // adjust here to change the color of the dot
                   activeImageIndex === index ? colors.primary : colors.white,
               },
             ]}
@@ -83,6 +85,8 @@ const styles = StyleSheet.create({
 
     width: '100%',
   },
+
+  //colors of the dots at default
   dot: {
     width: 7,
     height: 7,
