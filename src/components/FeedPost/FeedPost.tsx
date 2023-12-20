@@ -13,12 +13,14 @@ import {IPost} from '../../types/models';
 import {useState} from 'react';
 import DoublePressable from '../DoublePressable';
 import Carousel from '../Carousel';
+import VideoPlayer from '../VideoPlayer';
 
 interface IFeedPost {
   post: IPost;
+  isVisible?: boolean;
 }
 
-const FeedPost = ({post}: IFeedPost) => {
+const FeedPost = ({post, isVisible}: IFeedPost) => {
   //const {post} = props;
   const state = useState(false);
   // const isDescriptionExplained = state[0];
@@ -45,6 +47,12 @@ const FeedPost = ({post}: IFeedPost) => {
     );
   } else if (post.images) {
     content = <Carousel images={post.images} onDoublePress={toggleLike} />;
+  } else if (post.video) {
+    content = (
+      <DoublePressable onDoublePress={toggleLike}>
+        <VideoPlayer uri={post.video} paused={!isVisible} />
+      </DoublePressable>
+    );
   }
 
   // let lastTap = 0;
