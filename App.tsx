@@ -4,6 +4,7 @@ import FeedPost from './src/components/FeedPost/FeedPost';
 //import PsyPlay from '../images/psyPlay.png';
 import posts from './src/assets/data/posts.json';
 import HomeScreen from './src/screens/Homescreen';
+import CommentScreen from './src/screens/CommentsScreen/CommentScreen';
 
 const App = () => {
   return (
@@ -11,7 +12,7 @@ const App = () => {
       {/* {posts.map(post => (
         <FeedPost key={post.id} post={post} />
       ))} */}
-      <HomeScreen></HomeScreen>
+      <HomeScreen />
     </View>
   );
 };
