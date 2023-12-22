@@ -12,7 +12,7 @@ const App = () => {
       {/* {posts.map(post => (
         <FeedPost key={post.id} post={post} />
       ))} */}
-      <HomeScreen />
+      <CommentScreen />
     </View>
   );
 };
