@@ -5,6 +5,8 @@ import FeedPost from './src/components/FeedPost/FeedPost';
 import posts from './src/assets/data/posts.json';
 import HomeScreen from './src/screens/Homescreen';
 import CommentScreen from './src/screens/CommentsScreen/CommentScreen';
+import ProfileScreen from './src/screens/ProfileScreen/ProfileScreen';
+import Comment from './src/components/Comment';
 
 const App = () => {
   return (
@@ -12,7 +14,7 @@ const App = () => {
       {/* {posts.map(post => (
         <FeedPost key={post.id} post={post} />
       ))} */}
-      <CommentScreen />
+      <ProfileScreen />
     </View>
   );
 };

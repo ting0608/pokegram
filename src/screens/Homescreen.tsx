@@ -24,20 +24,7 @@ const HomeScreen = () => {
     },
   );
 
-  return (
-    <View style={styles.app}>
-      <FlatList
-        data={posts}
-        renderItem={({item}) => (
-          <FeedPost post={item} isVisible={activePostId === item.id} />
-        )}
-        //keyExtractor={item => item.id}
-        showsVerticalScrollIndicator={false}
-        viewabilityConfig={viewabilityConfig}
-        onViewableItemsChanged={onViewableItemsChanged.current}
-      />
-    </View>
-  );
+  return <View style={styles.app}></View>;
 };
 
 const styles = StyleSheet.create({
