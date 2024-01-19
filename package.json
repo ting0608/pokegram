@@ -10,12 +10,15 @@
     "test": "jest"
   },
   "dependencies": {
+    "expo": ">=50.0.0-0 <51.0.0",
+    "expo-camera": "~14.0.1",
     "react": "18.2.0",
     "react-hook-form": "^7.49.2",
     "react-native": "0.73.0",
     "react-native-image-picker": "^7.1.0",
     "react-native-vector-icons": "^10.0.3",
-    "react-native-video": "^5.2.1"
+    "react-native-video": "^5.2.1",
+    "react-native-vision-camera": "^3.8.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

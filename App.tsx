@@ -8,6 +8,7 @@ import CommentScreen from './src/screens/CommentsScreen/CommentScreen';
 import ProfileScreen from './src/screens/ProfileScreen/ProfileScreen';
 import Comment from './src/components/Comment';
 import EditProfileScreen from './src/screens/EditProfileScreen/EditProfileScreen';
+import PostUploadScreen from './src/screens/PostUploadScreen';
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
       {/* {posts.map(post => (
         <FeedPost key={post.id} post={post} />
       ))} */}
-      <EditProfileScreen />
+      <PostUploadScreen />
     </View>
   );
 };
