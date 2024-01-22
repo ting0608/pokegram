@@ -4,19 +4,19 @@ PODS:
   - DoubleConversion (1.1.6)
   - EXConstants (15.4.4):
     - ExpoModulesCore
-  - EXFont (11.10.2):
+  - EXFont (11.10.1):
     - ExpoModulesCore
-  - Expo (50.0.2):
+  - Expo (50.0.0-preview.11):
     - ExpoModulesCore
   - ExpoCamera (14.0.1):
     - ExpoModulesCore
     - ZXingObjC/OneD
     - ZXingObjC/PDF417
-  - ExpoFileSystem (16.0.4):
+  - ExpoFileSystem (16.0.3):
     - ExpoModulesCore
-  - ExpoKeepAwake (12.8.2):
+  - ExpoKeepAwake (12.8.1):
     - ExpoModulesCore
-  - ExpoModulesCore (1.11.7):
+  - ExpoModulesCore (1.11.6):
     - glog
     - RCT-Folly (= 2022.05.16.00)
     - React-Core
@@ -969,6 +969,8 @@ PODS:
     - glog
     - RCT-Folly (= 2022.05.16.00)
     - React-Core
+  - react-native-safe-area-context (4.8.2):
+    - React-Core
   - react-native-video (5.2.1):
     - React-Core
     - react-native-video/Video (= 5.2.1)
@@ -1141,12 +1143,16 @@ PODS:
     - React-jsi (= 0.73.0)
     - React-logger (= 0.73.0)
     - React-perflogger (= 0.73.0)
+  - RNScreens (3.29.0):
+    - glog
+    - RCT-Folly (= 2022.05.16.00)
+    - React-Core
   - RNVectorIcons (10.0.3):
     - glog
     - RCT-Folly (= 2022.05.16.00)
     - React-Core
   - SocketRocket (0.6.1)
-  - VisionCamera (3.8.0):
+  - VisionCamera (3.8.2):
     - React
     - React-callinvoker
     - React-Core
@@ -1218,6 +1224,7 @@ DEPENDENCIES:
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
   - React-Mapbuffer (from `../node_modules/react-native/ReactCommon`)
   - react-native-image-picker (from `../node_modules/react-native-image-picker`)
+  - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - react-native-video (from `../node_modules/react-native-video`)
   - React-nativeconfig (from `../node_modules/react-native/ReactCommon`)
   - React-NativeModulesApple (from `../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)
@@ -1239,6 +1246,7 @@ DEPENDENCIES:
   - React-runtimescheduler (from `../node_modules/react-native/ReactCommon/react/renderer/runtimescheduler`)
   - React-utils (from `../node_modules/react-native/ReactCommon/react/utils`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - RNScreens (from `../node_modules/react-native-screens`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - VisionCamera (from `../node_modules/react-native-vision-camera`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
@@ -1332,6 +1340,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   react-native-image-picker:
     :path: "../node_modules/react-native-image-picker"
+  react-native-safe-area-context:
+    :path: "../node_modules/react-native-safe-area-context"
   react-native-video:
     :path: "../node_modules/react-native-video"
   React-nativeconfig:
@@ -1374,6 +1384,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/react/utils"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNScreens:
+    :path: "../node_modules/react-native-screens"
   RNVectorIcons:
     :path: "../node_modules/react-native-vector-icons"
   VisionCamera:
@@ -1386,12 +1398,12 @@ SPEC CHECKSUMS:
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: fea03f2699887d960129cc54bba7e52542b6f953
   EXConstants: a3dc5f55ff049fe8be39595021395228617b0562
-  EXFont: 21b9c760abd593ce8f0d5386b558ced76018506f
-  Expo: 6c6526e76864e140363431722b22d0fa3cdeafd2
+  EXFont: eb7c1f2e068b6583dce24b267941bf21e47fd684
+  Expo: 48389448b355b109f9695edd238ad7de8d610db0
   ExpoCamera: 64f16dee3c712c41046dc6a3c22518461c0ceae7
-  ExpoFileSystem: 39e454b8e7f2358ae2c8f8ec255fede4c3039493
-  ExpoKeepAwake: 0f5cad99603a3268e50af9a6eb8b76d0d9ac956c
-  ExpoModulesCore: f103ff1346136b2926e1654f32b3f45ab0b74830
+  ExpoFileSystem: 85832d6d4d283b2cfe09c4b76b8ba36d9d0251b0
+  ExpoKeepAwake: 3684cae50a2b11b45176f13c6bc41436e8ce869a
+  ExpoModulesCore: 8a1022f8eb4012e69223abf56d2b8db803fca76f
   FBLazyVector: 39ba45baf4e398618f8b3a4bb6ba8fcdb7fc2133
   FBReactNativeSpec: 20cfca68498e27879514790359289d1df2b52c56
   Flipper: c7a0093234c4bdd456e363f2f19b2e4b27652d44
@@ -1429,6 +1441,7 @@ SPEC CHECKSUMS:
   React-logger: 008caec0d6a587abc1e71be21bfac5ba1662fe6a
   React-Mapbuffer: 58fe558faf52ecde6705376700f848d0293d1cef
   react-native-image-picker: 6c51359eca7a7df9f07e297218c25696eb9da976
+  react-native-safe-area-context: 0ee144a6170530ccc37a0fd9388e28d06f516a89
   react-native-video: c26780b224543c62d5e1b2a7244a5cd1b50e8253
   React-nativeconfig: a063483672b8add47a4875b0281e202908ff6747
   React-NativeModulesApple: 169506a5fd708ab22811f76ee06a976595c367a1
@@ -1450,9 +1463,10 @@ SPEC CHECKSUMS:
   React-runtimescheduler: 77543c74df984ce56c09d49d427149c53784aaf6
   React-utils: 42708ea436853045ef1eaff29996813d9fbbe209
   ReactCommon: 851280fb976399ca1aabc74cc2c3612069ea70a2
+  RNScreens: b582cb834dc4133307562e930e8fa914b8c04ef2
   RNVectorIcons: 210f910e834e3485af40693ad4615c1ec22fc02b
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
-  VisionCamera: 065622e7baa1a03ef61fdc950607453152a77a97
+  VisionCamera: 4b98b273902ac18491bb68481b6601f1f0da0f2d
   Yoga: 44003f970aa541b79dfdd59cf236fda41bd5890f
   ZXingObjC: 8898711ab495761b2dbbdec76d90164a6d7e14c5
 

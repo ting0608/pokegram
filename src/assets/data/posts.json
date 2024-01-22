@@ -33,7 +33,7 @@
   {
     "id": "v2",
     "createdAt": "19 December 2023",
-    "image": "/Users/tingcccc/Desktop/TestProj/pokegram/src/assets/images/pika1.jpg",
+    "image": "https://i.ibb.co/p3Cz8Ts/pika1.jpg",
     "description": "One of the best selfie ever taken by me.",
     "user": {
       "id": "u1",
@@ -56,7 +56,7 @@
   {
     "id": "v3",
     "createdAt": "21 November 2002",
-    "image": "/Users/tingcccc/Desktop/TestProj/pokegram/src/assets/images/GK_fight.png",
+    "image": "https://i.ibb.co/3zGJyp3/GK-fight.jpg",
     "description": "Definitely winnable. Whats under the ocean? MORE EARTH! ",
     "user": {
       "id": "u1",
@@ -87,7 +87,7 @@
   {
     "id": "v4",
     "createdAt": "18 June 2023",
-    "image": "/Users/tingcccc/Desktop/TestProj/pokegram/src/assets/images/suicune.png",
+    "image": "https://i.ibb.co/0Xw0Kj8/suicune.jpg",
     "description": "神兽之耻",
     "user": {
       "id": "u1",
@@ -119,7 +119,7 @@
   {
     "id": "v5",
     "createdAt": "20 June 2023",
-    "image": "/Users/tingcccc/Desktop/TestProj/pokegram/src/assets/images/arceus.png",
+    "image": "https://i.ibb.co/bvXLDGq/arceus.jpg",
     "description": "Same",
     "user": {
       "id": "u1",
@@ -151,9 +151,9 @@
     "id": "1",
     "createdAt": "19 December 2023",
     "images": [
-      "/Users/tingcccc/Desktop/TestProj/pokegram/src/assets/images/psyPlay.png",
-      "/Users/tingcccc/Desktop/TestProj/pokegram/src/assets/images/psyPlay1.tiff",
-      "/Users/tingcccc/Desktop/TestProj/pokegram/src/assets/images/psyPlay2.tiff"
+      "https://i.ibb.co/C5w791q/psyPlay1.png",
+      "https://i.ibb.co/89zc6Q5/psyPlay.webp",
+      "https://i.ibb.co/25hjTws/psyPlay2.png"
     ],
     "description": "Family gathering to engage in our favorite pastime—playing in the water on a warm and sunny day at the edge of Lake Psyduck. owdo ajdowcjd        oajdcodoa hdcaod haod, paiwcdpwid cpaiwdpcia dpiacpidid pacjf hphf pwcofha ",
     "user": {
@@ -185,7 +185,7 @@
   {
     "id": "2",
     "createdAt": "19 December 2023",
-    "image": "/Users/tingcccc/Desktop/TestProj/pokegram/src/assets/images/pika1.jpg",
+    "image": "https://i.ibb.co/p3Cz8Ts/pika1.jpg",
     "description": "One of the best selfie ever taken by me.",
     "user": {
       "id": "u1",
@@ -208,7 +208,7 @@
   {
     "id": "3",
     "createdAt": "21 November 2002",
-    "image": "/Users/tingcccc/Desktop/TestProj/pokegram/src/assets/images/GK_fight.png",
+    "image": "https://i.ibb.co/3zGJyp3/GK-fight.jpg",
     "description": "Definitely winnable. Whats under the ocean? MORE EARTH! ",
     "user": {
       "id": "u1",
@@ -239,7 +239,7 @@
   {
     "id": "4",
     "createdAt": "18 June 2023",
-    "image": "/Users/tingcccc/Desktop/TestProj/pokegram/src/assets/images/suicune.png",
+    "image": "https://i.ibb.co/0Xw0Kj8/suicune.jpg",
     "description": "神兽之耻",
     "user": {
       "id": "u1",
@@ -271,7 +271,7 @@
   {
     "id": "5",
     "createdAt": "20 June 2023",
-    "image": "/Users/tingcccc/Desktop/TestProj/pokegram/src/assets/images/arceus.png",
+    "image": "https://i.ibb.co/bvXLDGq/arceus.jpg",
     "description": "Same",
     "user": {
       "id": "u1",
